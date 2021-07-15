@@ -3,7 +3,7 @@ import './homepage.css'
 
 export default function Homepage({items,eventClick}){
     return(
-        <div className="main__home">
+        <div className={items.length < 1 ? `main__home__nodata`: `main__home`}>
             <div className="main__home__title">รายการหนังอัพเดทล่าสุด</div>
             <div className="main__card">
                 {items.map((el,index)=>{

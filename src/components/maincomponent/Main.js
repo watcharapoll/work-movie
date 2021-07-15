@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Route, Switch, useHistory} from 'react-router-dom'
+import { BrowserRouter as Route, Switch, useHistory, useLocation} from 'react-router-dom'
 import Toolbar from '../toolbar/toolbar'
 import Homepage from '.././homepage/Homepage'
 import Homepage2 from '.././homepage_2/Homepage2'
@@ -13,6 +13,7 @@ export default function Main(){
     const [dataall,setDaataAll] =  useState([])
     const [dataall2,setDaataAll2] =  useState([])
     const [datasearch,setDataSearch] =  useState([])
+    const location = useLocation()
     
 
     const funSearch = (data) =>(setDataSearch(data))

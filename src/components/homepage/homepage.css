@@ -5,6 +5,14 @@
     padding:50px;
     background: #e9e9e9;
 }
+.main__home__nodata {
+    margin-top: 50px;
+    height:calc(100vh - 150px);
+    position: relative;
+    padding:50px;
+    background: #e9e9e9;
+}
+
 .main__home__title{
     font-size:22px;
     font-weight: 700;
@@ -24,8 +32,9 @@
     display: block;
     width:200px;
     height:160;
-    border: 1px solid black;
-    border-radius:5px;
+    box-shadow: 2px 2px 2px rgb(142,142,142),
+    -1px -1px 10px rgb(142,142,142);
+    border-radius:3px;
     margin:10px 10px;
     background: gray;
     overflow: hidden;
