@@ -22,7 +22,6 @@
 .card__main__head img{
     width:100%;
     height:100%;
-    object-fit: cover;
 }
 
 .card__main__body{
