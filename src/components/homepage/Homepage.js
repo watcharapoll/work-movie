@@ -11,6 +11,7 @@ export default function Homepage({items,eventClick}){
                         <div key={index} className="card__main" onClick={() => eventClick(el)}>
                             <div className="card__head">
                                 <img src={`https://image.tmdb.org/t/p/w500/${el.poster_path}`}></img>
+                                <div className="card__rating">{el.vote_average}</div>
                             </div>
                             <div className="card__content">
                                 <div className="card__content__name">{el.title}</div>
